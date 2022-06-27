@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(136, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-text-paragraph {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: var(--Dark-grayish-blue);
+}
+
+body {
+  background: var(--Cream);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-image {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px 0px 0px 10px;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 28px;
+  border-radius: 0px 10px 10px 0px;
+  background: var(--White);
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.card-text-parfume {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.4em;
+  color: var(--Dark-grayish-blue);
+}
+
+.card-text-title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 108%;
+  color: var(--Very-dark-blue);
+}
+
+.card-text-price-discount {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--Dark-cyan);
+}
+
+.card-text-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+}
+
+.card-text-price-actual {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration-line: line-through;
+  color: var(--Dark-grayish-blue);
+}
+
+.btn-add-to-cart {
+  width: 235px;
+  height: 44px;
+  background: var(--Dark-cyan);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-add-to-cart:hover {
+  background: var(--Very-dark-blue);
+}
+
+.btn-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--White);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-image {
+    width: 343px;
+    height: 240px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: center center;
+    background-repeat: no-repeat;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .card-text-paragraph {
+    font-size: 13px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--Dark-grayish-blue);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 18px;
+    border-radius: 0px 0px 10px 10px;
+    background: var(--White);
+  }
+  .btn-add-to-cart {
+    width: 279px;
+    height: 44px;
+    background: var(--Dark-cyan);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
